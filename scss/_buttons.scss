@@ -1,0 +1,66 @@
+@import "variables";
+
+%button-blue{
+    background: $dark-blue-300;
+    border: 1px solid $dark-blue-300;
+    border-radius: 24px;
+    width: 99px;
+    height: 67px;
+
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font;
+    line-height: 19px;
+    text-align: center;
+    color: $white;
+}
+
+%button-blue-hover{
+    background: $dark-blue-400;
+    border: 1px solid $dark-blue-300;
+    border-radius: 24px;
+    width: 99px;
+    height: 67px;
+
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font;
+    line-height: 19px;
+    text-align: center;
+    color: $white;
+}
+
+%button-light{
+    background: $white;
+    border: 1px solid $dark-blue-300;
+    border-radius: 24px;
+    width: 99px;
+    height: 67px;
+
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font;
+    line-height: 19px;
+    text-align: center;
+    color: $dark-blue-300;
+
+}
+%button-light-hover{
+    background: $light-blue-200;
+    border: 1px solid $dark-blue-300;
+    border-radius: 24px;
+    width: 99px;
+    height: 67px;
+
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font;
+    line-height: 19px;
+    text-align: center;
+    color: $dark-blue-300;
+
+}
