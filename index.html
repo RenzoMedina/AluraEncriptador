@@ -15,20 +15,32 @@
     </header>
     <main>
         <section>
-            <form action="#" method="post">
-                <textarea name="" id="boxtext" cols="60" rows="15"></textarea>
+            <form>
+                <textarea name="" id="boxtext" cols="35" rows="8" placeholder="Ingrese tu texto aqui"></textarea>
+                <p><img src="./img/exclamación.png" alt=""><span>Solo letras minúsculas y sin acentos</span></p>
                 <div class="group-btn">
                     <button id="encriptar">Encriptar</button>
-                <button id="descencriptar">Desencriptar</button>
+                    <button id="descencriptar">Desencriptar</button>
                 </div>
             </form>
         </section>
         <aside>
-            <img src="./img/Muñeco.png" alt="">
+            <img src="./img/Muñeco.png" alt="imagen1" id="imagenMuneco">
+            <div class="mensaje" id="mensaje">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button id="copiar">Copiar</button>
         </aside>
     </main>
     <footer>
-        Redes sociales
+        <div class="pie">
+            <p>Desarrollado por Renzo Medina</p>
+            <div class="redes">
+                <a href="">Linkeind</a>
+                <a href="">GitHub</a>
+            </div>
+        </div>
     </footer>
     <script src="main.js"></script>
 </body>

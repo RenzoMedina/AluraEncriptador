@@ -22,7 +22,7 @@
     border-radius: 24px;
     width: 99px;
     height: 67px;
-
+    cursor: pointer;
     font-family: $font-inter;
     font-style: normal;
     font-weight: 400;
@@ -49,12 +49,12 @@
 
 }
 %button-light-hover{
-    background: $light-blue-200;
+    background: $light-blue-300;
     border: 1px solid $dark-blue-300;
     border-radius: 24px;
     width: 99px;
     height: 67px;
-
+    cursor: pointer;
     font-family: $font-inter;
     font-style: normal;
     font-weight: 400;

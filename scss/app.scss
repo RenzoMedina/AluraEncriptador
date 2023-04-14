@@ -9,6 +9,7 @@
 }
 body{
     position: relative;
+    font-family: $font-inter;
 }
 header{
     position: absolute;
@@ -19,18 +20,132 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;   
-    height: 80vh;
+    height: 90vh;
+
 
 }
 aside{
     border: 1px solid $dark-blue-400;
+    padding: 20px;
+    height: 85vh;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: white;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .08);
+    img{
+        width: 200px;
+        margin-bottom: 32px;
+        background: $white;
+    }
+}
+.mensaje{
+    text-align: center;
+    background: $white;
+    :first-of-type{
+        color: $gray-500;
+        font-size: $font-message;
+        margin-bottom: 16px;
+        line-height: 28.8px;
+        font-weight: 700;
+        background: $white;
+    }
+    :last-of-type{
+        font-size: $font;
+        line-height: 24px;
+        font-weight: 400px;
+        background: $white;
+    }
+    
 }
 form{
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
+    textarea{
+        font-size: $font-content;
+        padding: $font-message;
+        color: $dark-blue-300;
+        margin-left: 50px;
+        border: none;
+        resize: none;
+        &::placeholder{
+            color: inherit;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .group-btn{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 80px;
+    }
+    p{
+        display: flex;
+        font-size: $font-sm;
+        margin:20px 0 10px 83px;
+        img{
+            margin-right: 3px;
+            width: 14px;
+        }
+    }
 }
+
+.group-btn{
+    
+    :first-of-type{
+        @extend %button-blue;
+        width: 328px;
+        height: 67px;
+        margin-right: 24px;
+    }
+    :first-of-type:hover{
+        @extend %button-blue-hover;
+        width: 328px;
+        height: 67px;
+        transition: all .3s;
+    }
+    :last-of-type{
+        @extend %button-light;
+        width: 328px;
+        height: 67px;
+    }
+    :last-of-type:hover{
+        @extend %button-light-hover;
+        width: 328px;
+        height: 67px;
+        transition: all .3s;
+    }
+}
+
 footer{
-    height: 20vh;
+    height: 10vh;
     background: $dark-blue-400;
     color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie{
+    background: inherit;
+    p{
+        background: inherit;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+.redes{
+    background: inherit;
+    display: flex;
+    justify-content: space-around;
+    a{
+        background: inherit;
+        text-decoration: none;
+        color: inherit;
+    }
 }

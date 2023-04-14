@@ -1,5 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.group-btn :first-of-type {
+  background: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 99px;
+  height: 67px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFF; }
+
+.group-btn :first-of-type:hover {
+  background: #072B61;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 99px;
+  height: 67px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFF; }
+
+.group-btn :last-of-type {
+  background: #FFFF;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 99px;
+  height: 67px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871; }
+
+.group-btn :last-of-type:hover {
+  background: #E9ECF8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 99px;
+  height: 67px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871; }
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +65,8 @@
   background: #E9ECF8; }
 
 body {
-  position: relative; }
+  position: relative;
+  font-family: "Inter"; }
 
 header {
   position: absolute;
@@ -18,16 +77,108 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80vh; }
+  height: 90vh; }
 
 aside {
-  border: 1px solid #072B61; }
+  border: 1px solid #072B61;
+  padding: 20px;
+  height: 85vh;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: white;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08); }
+  aside img {
+    width: 200px;
+    margin-bottom: 32px;
+    background: #FFFF; }
+
+.mensaje {
+  text-align: center;
+  background: #FFFF; }
+  .mensaje :first-of-type {
+    color: #343A40;
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 28.8px;
+    font-weight: 700;
+    background: #FFFF; }
+  .mensaje :last-of-type {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400px;
+    background: #FFFF; }
 
 form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 0; }
+  form textarea {
+    font-size: 32px;
+    padding: 24px;
+    color: #0A3871;
+    margin-left: 50px;
+    border: none;
+    resize: none; }
+    form textarea::placeholder {
+      color: inherit; }
+    form textarea:focus {
+      outline: none; }
+  form .group-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 80px; }
+  form p {
+    display: flex;
+    font-size: 12px;
+    margin: 20px 0 10px 83px; }
+    form p img {
+      margin-right: 3px;
+      width: 14px; }
+
+.group-btn :first-of-type {
+  width: 328px;
+  height: 67px;
+  margin-right: 24px; }
+
+.group-btn :first-of-type:hover {
+  width: 328px;
+  height: 67px;
+  transition: all .3s; }
+
+.group-btn :last-of-type {
+  width: 328px;
+  height: 67px; }
+
+.group-btn :last-of-type:hover {
+  width: 328px;
+  height: 67px;
+  transition: all .3s; }
 
 footer {
-  height: 20vh;
+  height: 10vh;
   background: #072B61;
-  color: #FFFF; }
+  color: #FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pie {
+  background: inherit; }
+  .pie p {
+    background: inherit;
+    font-weight: 500;
+    margin-bottom: 10px; }
+
+.redes {
+  background: inherit;
+  display: flex;
+  justify-content: space-around; }
+  .redes a {
+    background: inherit;
+    text-decoration: none;
+    color: inherit; }
