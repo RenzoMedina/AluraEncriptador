@@ -1,5 +1,3 @@
-let nombre ="Mediná"
-
 //variables
 const textArea = document.getElementById("boxtext")
 const btnEncriptar = document.getElementById("encriptar")
@@ -54,6 +52,7 @@ btnDesencriptar.addEventListener("click", ()=>{
     textCopiar.value = descriptador(contenido)
 
 })
+
 //funciones de logica
 //funcion de copiado
 function CopyText(){
@@ -62,10 +61,7 @@ function CopyText(){
 
    return textoCopiado
 }
-function validarCampo(texto){
-    
 
-}
 //convertidor a minusculas y valida sin tildes
 function convertir(texto){
 
@@ -110,12 +106,6 @@ function encriptador(texto){
     //console.log(unir)
 
     return unir
-}
-//esta function la voy a dividir para cada boton, para poder darle mejor mantenimiento
-function inicio(){
-    let encrip = encriptador(nombre)
-    console.log(encrip)    
-    descriptador(encrip)
 }
 
 //función para descriptar el mensaje
