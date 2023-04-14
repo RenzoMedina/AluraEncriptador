@@ -5,5 +5,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: $light-blue-100;
+    background: $light-blue-300;
+}
+body{
+    position: relative;
+}
+header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    height: 80vh;
+
+}
+aside{
+    border: 1px solid $dark-blue-400;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 20vh;
+    background: $dark-blue-400;
+    color: $white;
 }

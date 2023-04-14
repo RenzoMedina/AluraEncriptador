@@ -4,4 +4,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #F3F5FC; }
+  background: #E9ECF8; }
+
+body {
+  position: relative; }
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh; }
+
+aside {
+  border: 1px solid #072B61; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+footer {
+  height: 20vh;
+  background: #072B61;
+  color: #FFFF; }
