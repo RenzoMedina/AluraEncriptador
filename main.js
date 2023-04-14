@@ -23,6 +23,13 @@ formulario.addEventListener("submit", e =>{
 btnEncriptar.addEventListener("click", () =>{
     
     contenido = textArea.value
+    //validacion de solo texto
+    let validador = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/
+    if(!validador.test(contenido)){
+        alert("Ingreso solo texto")
+        textArea.focus()
+        return false
+    }
     textArea.value=""
     copiarTexto.classList.add("mostrar")
     copiarTexto.classList.remove("ocultar")
@@ -37,20 +44,28 @@ btnEncriptar.addEventListener("click", () =>{
 })
 
 //boton copiar el texto
-btnCopiarTexto.addEventListener("click", CopyText)
+btnCopiarTexto.addEventListener("click",CopyText)
 
+//boton descrencriptar texto
+btnDesencriptar.addEventListener("click", ()=>{
+    
+    contenido = textArea.value
+    textArea.value = ""
+    textCopiar.value = descriptador(contenido)
+
+})
 //funciones de logica
+//funcion de copiado
 function CopyText(){
     textCopiar.select()
    let textoCopiado = document.execCommand("copy")
 
    return textoCopiado
 }
-//validacion
-function validarTexto(){
-    //validaremos que no ingress numeros ni caracteres especiales
-}
+function validarCampo(texto){
+    
 
+}
 //convertidor a minusculas y valida sin tildes
 function convertir(texto){
 
@@ -119,6 +134,7 @@ function descriptador(texto){
                         .replaceAll("imes","i")
                         .replaceAll("ober","o")
                         .replaceAll("ufat","u")
-        console.log(nuevo)
+        
+        return nuevo
     }
 }   
