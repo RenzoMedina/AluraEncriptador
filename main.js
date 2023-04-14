@@ -1,5 +1,7 @@
 let nombre ="Mediná"
 
+
+
 function validarTexto(){
     //validaremos que no ingress numeros ni caracteres especiales
 }
