@@ -29,7 +29,7 @@
   text-align: center;
   color: #FFFF; }
 
-.group-btn :last-of-type {
+aside .copiar, .group-btn :last-of-type {
   background: #FFFF;
   border: 1px solid #0A3871;
   border-radius: 24px;
@@ -43,7 +43,7 @@
   text-align: center;
   color: #0A3871; }
 
-.group-btn :last-of-type:hover {
+aside .copiar:hover, .group-btn :last-of-type:hover {
   background: #E9ECF8;
   border: 1px solid #0A3871;
   border-radius: 24px;
@@ -72,6 +72,8 @@ header {
   position: absolute;
   top: 20px;
   left: 20px; }
+  header svg {
+    width: 50px; }
 
 main {
   display: flex;
@@ -91,11 +93,38 @@ aside {
   border-radius: 32px;
   background: white;
   border: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08); }
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-right: 30px; }
   aside img {
     width: 200px;
+    margin-top: 25px;
     margin-bottom: 32px;
     background: #FFFF; }
+  aside .copiar {
+    display: none;
+    margin: 0px 18px 0px 18px;
+    width: 280px;
+    height: 67px;
+    margin-right: 24px;
+    position: absolute;
+    bottom: 20px; }
+    aside .copiar:hover {
+      width: 300px;
+      height: 67px;
+      margin-right: 24px; }
+  aside textarea {
+    display: none;
+    position: absolute;
+    top: 25px;
+    border-radius: 24px;
+    padding: 24px;
+    background: #FFFF;
+    border: none;
+    resize: non;
+    font-family: 24px; }
+    aside textarea:focus {
+      outline: none; }
 
 .mensaje {
   text-align: center;
@@ -111,7 +140,8 @@ aside {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400px;
-    background: #FFFF; }
+    background: #FFFF;
+    margin-bottom: 80px; }
 
 form {
   display: flex;
@@ -121,7 +151,7 @@ form {
     font-size: 32px;
     padding: 24px;
     color: #0A3871;
-    margin-left: 50px;
+    margin-left: 98px;
     border: none;
     resize: none; }
     form textarea::placeholder {
@@ -135,7 +165,7 @@ form {
   form p {
     display: flex;
     font-size: 12px;
-    margin: 20px 0 10px 83px; }
+    margin: 20px 0 10px 120px; }
     form p img {
       margin-right: 3px;
       width: 14px; }
@@ -143,7 +173,7 @@ form {
 .group-btn :first-of-type {
   width: 328px;
   height: 67px;
-  margin-right: 24px; }
+  margin-right: 10px; }
 
 .group-btn :first-of-type:hover {
   width: 328px;
@@ -152,7 +182,8 @@ form {
 
 .group-btn :last-of-type {
   width: 328px;
-  height: 67px; }
+  height: 67px;
+  margin-right: 20px; }
 
 .group-btn :last-of-type:hover {
   width: 328px;

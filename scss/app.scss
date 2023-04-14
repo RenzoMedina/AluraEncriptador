@@ -15,6 +15,9 @@ header{
     position: absolute;
     top: 20px;
     left: 20px;
+    svg{
+        width: 50px;
+    }
 }
 main{
     display: flex;
@@ -37,10 +40,43 @@ aside{
     background: white;
     border: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .08);
+    position: relative;
+    margin-right: 30px;
     img{
         width: 200px;
+        margin-top: 25px;
         margin-bottom: 32px;
         background: $white;
+    }
+    .copiar{
+        display: none;
+        margin: 0px 18px 0px 18px;
+        @extend %button-light;
+        width: 280px;
+        height: 67px;
+        margin-right: 24px;
+        position:absolute;
+        bottom: 20px;
+        &:hover{
+            @extend %button-light-hover;
+            width: 300px;
+            height: 67px;
+            margin-right: 24px;
+        }
+    }
+    textarea{
+        display: none;
+        position: absolute;
+        top: 25px;
+        border-radius: 24px;
+        padding: $font-message;
+        background: $white;
+        border: none;
+        resize: non;
+        font-family: $font-message;
+        &:focus{
+            outline: none;
+        }
     }
 }
 .mensaje{
@@ -59,6 +95,7 @@ aside{
         line-height: 24px;
         font-weight: 400px;
         background: $white;
+        margin-bottom: 80px;
     }
     
 }
@@ -70,7 +107,7 @@ form{
         font-size: $font-content;
         padding: $font-message;
         color: $dark-blue-300;
-        margin-left: 50px;
+        margin-left: 98px;
         border: none;
         resize: none;
         &::placeholder{
@@ -88,7 +125,7 @@ form{
     p{
         display: flex;
         font-size: $font-sm;
-        margin:20px 0 10px 83px;
+        margin:20px 0 10px 120px;
         img{
             margin-right: 3px;
             width: 14px;
@@ -102,7 +139,7 @@ form{
         @extend %button-blue;
         width: 328px;
         height: 67px;
-        margin-right: 24px;
+        margin-right: 10px;
     }
     :first-of-type:hover{
         @extend %button-blue-hover;
@@ -114,6 +151,7 @@ form{
         @extend %button-light;
         width: 328px;
         height: 67px;
+        margin-right: 20px;
     }
     :last-of-type:hover{
         @extend %button-light-hover;
