@@ -1,7 +1,52 @@
 let nombre ="Mediná"
 
+//variables
+const textArea = document.getElementById("boxtext")
+const btnEncriptar = document.getElementById("encriptar")
+const btnDesencriptar = document.getElementById("descencriptar")
+const btnCopiarTexto = document.getElementById("copiar")
+let contenido
 
+//css
+const copiarTexto= document.getElementById("copiar")
+const textCopiar = document.getElementById("textcopiar")
+const formulario = document.querySelector("form")
+const imagen = document.getElementById("imagenMuneco")
+const mensaje = document.getElementById("mensaje")
 
+//evento para que el formulario no recargue la página
+formulario.addEventListener("submit", e =>{
+    e.preventDefault()
+})
+
+//evento boton encriptar
+btnEncriptar.addEventListener("click", () =>{
+    
+    contenido = textArea.value
+    textArea.value=""
+    copiarTexto.classList.add("mostrar")
+    copiarTexto.classList.remove("ocultar")
+    imagen.classList.add("ocultar")
+    mensaje.classList.add("ocultar")
+
+    textCopiar.classList.add("mostrar")
+    textCopiar.classList.remove("ocultar")
+    //la funcion encriptador
+    textCopiar.value=encriptador(contenido)
+
+})
+
+//boton copiar el texto
+btnCopiarTexto.addEventListener("click", CopyText)
+
+//funciones de logica
+function CopyText(){
+    textCopiar.select()
+   let textoCopiado = document.execCommand("copy")
+
+   return textoCopiado
+}
+//validacion
 function validarTexto(){
     //validaremos que no ingress numeros ni caracteres especiales
 }
@@ -77,5 +122,3 @@ function descriptador(texto){
         console.log(nuevo)
     }
 }   
-
-inicio()

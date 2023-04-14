@@ -85,7 +85,7 @@ aside {
   border: 1px solid #072B61;
   padding: 20px;
   height: 85vh;
-  width: 330px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,26 +102,24 @@ aside {
     margin-bottom: 32px;
     background: #FFFF; }
   aside .copiar {
-    display: none;
-    margin: 0px 18px 0px 18px;
-    width: 280px;
+    margin: 0px 23px 0px 23px;
+    width: 250px;
     height: 67px;
     margin-right: 24px;
     position: absolute;
     bottom: 20px; }
     aside .copiar:hover {
-      width: 300px;
+      width: 250px;
       height: 67px;
       margin-right: 24px; }
   aside textarea {
-    display: none;
     position: absolute;
     top: 25px;
     border-radius: 24px;
     padding: 24px;
     background: #FFFF;
     border: none;
-    resize: non;
+    resize: none;
     font-family: 24px; }
     aside textarea:focus {
       outline: none; }
@@ -165,7 +163,7 @@ form {
   form p {
     display: flex;
     font-size: 12px;
-    margin: 20px 0 10px 120px; }
+    margin: 20px 0 10px 130px; }
     form p img {
       margin-right: 3px;
       width: 14px; }
@@ -213,3 +211,9 @@ footer {
     background: inherit;
     text-decoration: none;
     color: inherit; }
+
+.ocultar {
+  display: none; }
+
+.mostrar {
+  display: block; }
