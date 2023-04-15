@@ -211,6 +211,9 @@ footer {
     background: inherit;
     text-decoration: none;
     color: inherit; }
+    .redes a img {
+      width: 25px;
+      border-radius: 10px; }
 
 .ocultar {
   display: none; }

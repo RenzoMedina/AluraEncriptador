@@ -12,6 +12,7 @@ const formulario = document.querySelector("form")
 const imagen = document.getElementById("imagenMuneco")
 const mensaje = document.getElementById("mensaje")
 
+textArea.focus()
 //evento para que el formulario no recargue la página
 formulario.addEventListener("submit", e =>{
     e.preventDefault()
