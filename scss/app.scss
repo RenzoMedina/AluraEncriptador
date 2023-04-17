@@ -1,6 +1,6 @@
 @import "variables";
 @import "buttons";
-
+@import "queries";
 *{
     margin: 0;
     padding: 0;
@@ -197,4 +197,7 @@ footer{
 }
 .mostrar{
     display: block;
+}
+@media (min-width: 375px) and (max-width: 840px){
+    @include celular;
 }

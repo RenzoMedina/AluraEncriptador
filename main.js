@@ -29,7 +29,7 @@ btnEncriptar.addEventListener("click", () =>{
         textArea.focus()
         return false
     }
-    textArea.value=""
+    //textArea.value=""
     copiarTexto.classList.add("mostrar")
     copiarTexto.classList.remove("ocultar")
     imagen.classList.add("ocultar")
@@ -49,7 +49,7 @@ btnCopiarTexto.addEventListener("click",CopyText)
 btnDesencriptar.addEventListener("click", ()=>{
     
     contenido = textArea.value
-    textArea.value = ""
+    //textArea.value = ""
     textCopiar.value = descriptador(contenido)
 
 })
